@@ -7,7 +7,7 @@ var ForagerBee = function() {
 };
 
 // to inherit, set descendent prototype to a new instance of the parent class
-ForagerBee.prototype = new Bee();
+ForagerBee.prototype = Object.create(Bee.prototype);
 
 // set decendent constructor equal to
 ForagerBee.prototype.constructor = ForagerBee;

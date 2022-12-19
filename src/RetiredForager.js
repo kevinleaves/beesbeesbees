@@ -7,7 +7,7 @@ var RetiredForagerBee = function() {
 };
 
 // set descendant prototype to a new instance of the parent class
-RetiredForagerBee.prototype = new ForagerBee();
+RetiredForagerBee.prototype = Object.create(ForagerBee.prototype);
 
 RetiredForagerBee.prototype.constructor = RetiredForagerBee;
 

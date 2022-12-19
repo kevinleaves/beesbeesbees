@@ -5,7 +5,7 @@ var Bee = function() {
   this.job = 'keep on growing'
 };
 
-Bee.prototype = new Grub(); //Bee prototype inherits from grub
+Bee.prototype = Object.create(Grub.prototype); //Bee prototype inherits from grub
 Bee.prototype.constructor = Bee;
 
 // Set Bee specific methods below:
